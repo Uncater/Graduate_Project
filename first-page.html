@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Рассчет коэффициента Жаккарда</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<h1>Рассчет коэффициента Жаккарда</h1>
+<br>
+<div class="row">
+    <div class="col-sm-4">
+        <h2>Новый сайт</h2><br>
+        <form role="form">
+            <div class="form-group">
+                <span>Файл CSV для нового сайта</span><br><br>
+                <input type="file" name="csv_new">
+                <br>
+                <p class="help-block">Или создайте новый.Ведите значения через ";"</p>
+                <label for="url">URL</label>
+                <input type="url" class="form-control" id="url" placeholder="Введите URL">
+            </div>
+            <div class="form-group">
+                <label for="H1">Заголовок</label>
+                <input type="text" class="form-control" id="H1" placeholder="Заголовок">
+            </div>
+            <button type="submit" class="btn btn-primary">Создать</button>
+        </form>
+    </div>
+    <div class="col-sm-4 col-md-offset-3">
+        <h2>Старый сайт</h2><br>
+        <form role="form">
+            <div class="form-group">
+                <span>Файл CSV для старого сайта</span><br><br>
+                <input type="file" name="csv_old">
+                <br>
+                <p class="help-block">Или создайте новый.Ведите значения через ";"</p>
+                <label for="url">URL</label>
+                <input type="url" class="form-control" id="url" placeholder="Введите URL">
+            </div>
+            <div class="form-group">
+                <label for="H1">Заголовок</label>
+                <input type="text" class="form-control" id="H1" placeholder="Заголовок">
+            </div>
+            <button type="submit" class="btn btn-primary">Создать</button>
+        </form>
+    </div>
+    </div>
+    <br><br><br>
+<div class="row">
+<div class="col-md-2 col-md-offset-5">
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="radio1" value="option1" checked>
+            Сравнить по URL
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="radio22" value="option2">
+            Сравнить по H1
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Расчитать</button>
+</div>
+</div>
+</body>
+</html>
